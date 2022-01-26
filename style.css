@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kolker+Brush&family=Lobster&display=swap');
+body{
+    background-color: rgb(209, 207, 203);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------------------navbar style ---------------------*/
+nav{
+     font-family: 'Dancing Script', cursive;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 64px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    margin: 0 12px 0 12px;
+}
+.brand img{
+    width: 48px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+/* ----------------main container Style----------------- */
+.container{
+    min-height: 68vh;
+    font-family: 'Lobster', cursive;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 71%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+.songList h1{
+    font-size: 48px;
+    text-align: center;
+    align-items: center;
+}
+/* ----------------bottom style----------------- */
+.bottom{
+    position: static;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 100vh;
+    cursor: pointer;
+}
+
+
+/* ----------------song item style----------------- */
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px ;
+    
+}
+.songItem img{
+    width: 43px;
+    border-radius: 50%;
+    margin: 0 23px;
+
+}
+.timeStamp{
+    padding: 0px 12px;
+
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 32px;
+}
+.songInfo{
+    position: absolute;
+    left: 48vh;
+}
+.songInfo img{
+    opacity: 0;
+    /* for gif giveing transition */
+    transition: opacity 0.4s ease-in;    
+
+}
